@@ -3,12 +3,14 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
-const Layout = () => {
+const Layout = (props) => {
   return (
     <div>
       <Header />
-      <Navbar />
-      <Footer />
+      <Navbar
+        onDisconnectWallet={props.onDisconnectWallet}
+        account={props.account}
+      />
     </div>
   );
 };
