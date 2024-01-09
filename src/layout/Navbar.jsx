@@ -1,6 +1,6 @@
 import React from "react";
 
-const Navbar = () => {
+const Navbar = ({ onDisconnectWallet, account }) => {
   return (
     <nav>
       <ul>
@@ -17,6 +17,13 @@ const Navbar = () => {
           <a href="/mint">Mint NFT</a>
         </li>
       </ul>
+      {account && (
+        <div>
+          <button onClick={onDisconnectWallet}>
+            Disconnect Wallet {String(account).slice(-6)}
+          </button>
+        </div>
+      )}
     </nav>
   );
 };
