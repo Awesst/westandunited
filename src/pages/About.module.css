@@ -1,0 +1,35 @@
+.cardContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 90px;
+}
+
+.headlineText {
+  display: flex;
+  font-weight: 700;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 55px;
+}
+
+.togetherness {
+  font-weight: 700;
+  margin-top: 50px;
+  margin-left: 80px;
+  color: #e39000;
+}
+
+.Solidarity {
+  font-weight: 700;
+  margin-top: 50px;
+  margin-right: 50px;
+  color: #e39000;
+}
+
+.Resistance {
+  font-weight: 700;
+  margin-top: 50px;
+  margin-right: 100px;
+  color: #e39000;
+}

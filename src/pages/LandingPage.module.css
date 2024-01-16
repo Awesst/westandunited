@@ -1,0 +1,40 @@
+.landingPageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.imgContainer img {
+  width: 800px;
+  height: 600px;
+}
+.connectMintButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.connectMintButton button {
+  padding: 10px 50px;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  background-color: #e39000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+.connectMintButton button:hover {
+  background-color: black;
+  color: #e39000;
+  border: 1px solid #e39000;
+}
