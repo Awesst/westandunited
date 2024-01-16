@@ -1,0 +1,48 @@
+.mintingpageContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.headerText {
+  font-size: 20px;
+  color: #e39000;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.imgContainer img {
+  width: 800px;
+  height: 600px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mintButton {
+  padding: 10px 20px;
+  margin-top: 10px;
+  width: 15%;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  background-color: #e39000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+}
+
+.mintButton:hover {
+  background-color: black;
+  color: #e39000;
+  border: 1px solid #e39000;
+}

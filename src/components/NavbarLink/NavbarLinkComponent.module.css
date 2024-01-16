@@ -1,0 +1,15 @@
+.textColor {
+  background: black;
+  border-radius: 5px;
+  padding: 8px;
+  color: #e39000;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s, transform 0.2s;
+}
+
+.textColor:hover {
+  color: black;
+  background-color: #e39000;
+  border: 1px solid black;
+}

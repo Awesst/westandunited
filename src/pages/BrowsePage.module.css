@@ -1,0 +1,21 @@
+.browseContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.browsePicture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.browsePicture img {
+  width: 800px;
+  height: 600px;
+}
+
+.browseText {
+  font-size: 20px;
+  color: #e39000;
+}

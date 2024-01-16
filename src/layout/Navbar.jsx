@@ -1,25 +1,28 @@
 import React from "react";
+import { NavbarLinkComponent } from "../components/NavbarLink/NavbarLinkComponent";
+import styles from "./Navbar.module.css";
 
 const Navbar = ({ onDisconnectWallet, account }) => {
   return (
-    <nav>
-      <ul>
+    <nav className={styles.navbar}>
+      <ul className={styles.navbarLinksList}>
         <li>
-          <a href="/">Home</a>
+          <NavbarLinkComponent text={"Home"} href="/" />
         </li>
         <li>
-          <a href="/about">About</a>
+          <NavbarLinkComponent text={"About"} href="/about" />
         </li>
         <li>
-          <a href="/browse">Browse Collection</a>
+          <NavbarLinkComponent text={"Browse Collection"} href="/browse" />
         </li>
         <li>
-          <a href="/mint">Mint NFT</a>
+          <NavbarLinkComponent text={"Mint NFT"} href="/mint" />
         </li>
       </ul>
+
       {account && (
-        <div>
-          <button onClick={onDisconnectWallet}>
+        <div className={styles.navbarWallet}>
+          <button onClick={onDisconnectWallet} className={styles.walletButton}>
             Disconnect Wallet {String(account).slice(-6)}
           </button>
         </div>

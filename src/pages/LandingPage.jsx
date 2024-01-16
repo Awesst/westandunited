@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Layout from "../layout/Layout";
 import LandingPagePicture from "../img/NFT.png";
 import Footer from "../layout/Footer";
+import styles from "./LandingPage.module.css";
 
 const LandingPage = () => {
   const [buttonText, setButtonText] = useState(
@@ -53,16 +54,19 @@ const LandingPage = () => {
   };
 
   return (
-    <div>
-      <Layout
-        onDisconnectWallet={handleDisconnectWallet}
-        account={account}
-      ></Layout>
-      <h1>Det ska vara enkel landingpage men bara detta tänker jag</h1>
-      <img src={LandingPagePicture} alt="landing page" />
-      <button onClick={handleClick}>{buttonText}</button>
+    <>
+      <Layout onDisconnectWallet={handleDisconnectWallet} account={account}>
+        <div className={styles.landingPageContainer}>
+          <div className={styles.imgContainer}>
+            <img src={LandingPagePicture} alt="landing page" />
+          </div>
+          <div className={styles.connectMintButton}>
+            <button onClick={handleClick}>{buttonText}</button>
+          </div>
+        </div>
+      </Layout>
       <Footer />
-    </div>
+    </>
   );
 };
 

@@ -3,6 +3,7 @@ import Layout from "../layout/Layout";
 import BrowsePictureNFT from "../img/NFT.png";
 import ABI from "../ABI.js";
 import Web3 from "web3";
+import styles from "./BrowsePage.module.css";
 
 const ContractAddress = "0x1Cc111b25C8A3f330EfC612059eaF97CD03D0a8b";
 
@@ -29,11 +30,22 @@ const BrowsePage = () => {
   }, []);
 
   return (
-    <div>
-      <Layout></Layout>
-      <img src={BrowsePictureNFT} alt="browse page" />
-      <h1>Total Minted NFTs: {tokenIdCounter}</h1>
-    </div>
+    <Layout>
+      <div className={styles.browseContainer}>
+        <div className={styles.browsePicture}>
+          <img src={BrowsePictureNFT} alt="browse page" />
+        </div>
+        <div className={styles.browseText}>
+          <h1>
+            Our community has Minted: {tokenIdCounter} NFT's, on the war against
+            Anti-cyberbullying.
+            <br />
+            <br />
+            Thank you for your contribution.
+          </h1>
+        </div>
+      </div>
+    </Layout>
   );
 };
 

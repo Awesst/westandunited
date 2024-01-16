@@ -1,0 +1,39 @@
+.navbar {
+  background: #e39000;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.navbarLinksList {
+  display: flex;
+  width: 450px;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 0;
+}
+
+.navbarWallet {
+  width: 75%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.walletButton {
+  background: black;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s, transform 0.2s;
+}
+
+.walletButton:hover {
+  background: #ff0000;
+  transform: scale(1.05);
+}
