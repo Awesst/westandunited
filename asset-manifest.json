@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/westandunited/static/css/main.78dc19b9.css",
+    "main.js": "/westandunited/static/js/main.6b5d2fb9.js",
+    "static/media/NFT.png": "/westandunited/static/media/NFT.242b9b313f2e84789077.png",
+    "static/media/UnityLogo.jpg": "/westandunited/static/media/UnityLogo.2d8e2d521352c4c83ce7.jpg",
+    "static/media/CyberbullyingLogo.jpeg": "/westandunited/static/media/CyberbullyingLogo.ca7788ff3f983a5576e8.jpeg",
+    "static/media/UnityUtZoomad.jpg": "/westandunited/static/media/UnityUtZoomad.8ef35f298be656821e56.jpg",
+    "index.html": "/westandunited/index.html",
+    "main.78dc19b9.css.map": "/westandunited/static/css/main.78dc19b9.css.map",
+    "main.6b5d2fb9.js.map": "/westandunited/static/js/main.6b5d2fb9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78dc19b9.css",
+    "static/js/main.6b5d2fb9.js"
+  ]
+}
